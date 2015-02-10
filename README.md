@@ -1,7 +1,7 @@
 Proprio windows installation
 ===
 
-* Install [Vagrant](https://www.vagrantup.com/downloads.htpl)
+* Install [Vagrant](https://www.vagrantup.com/downloads.html)
 * Copy this code to your machine.
 * Create a `proprio-data` directory next to `proprio-windows`
 * Copy your data inside `proprio-data`
