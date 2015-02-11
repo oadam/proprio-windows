@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#install docker
-curl -sSL https://get.docker.com/ubuntu/ | sh
-gpasswd -a vagrant docker #sudo-less docker
+#install docker if needed
+which docker || (curl -sSL https://get.docker.com/ubuntu/ | sh)
+#sudo-less docker
+gpasswd -a vagrant docker
 
 #stop the app
 docker stop $(docker ps -q)
