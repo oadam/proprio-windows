@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #install docker
 curl -sSL https://get.docker.com/ubuntu/ | sh
 gpasswd -a vagrant docker #sudo-less docker
