@@ -8,6 +8,9 @@ gpasswd -a vagrant docker
 #stop the app
 docker stop $(docker ps -q)
 
+#pull the app
+docker pull oadam/proprio
+
 #generate secret key
 SECRET_KEY="$(docker run oadam/proprio 2>&1|sed -n '23,23 p')"
 echo will use secret key: "$SECRET_KEY"
